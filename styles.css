@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -18,6 +17,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* para que el video no se superponga a los elementos de la pagina */
     z-index: -1;
     filter: blur(4px);
     transform: scale(1.05);
@@ -77,10 +77,6 @@ body {
     backdrop-filter: blur(4px);
     padding: 16px;
     border-radius: 12px;
-}
-
-.fila.invertida {
-    flex-direction: row-reverse;
 }
 
 .fila img {
